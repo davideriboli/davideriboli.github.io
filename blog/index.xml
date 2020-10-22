@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Void Draw</title>
+    <link>https://davideriboli.github.io/blog/</link>
+    <description>Recent content in Blogs on Void Draw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FFMPEG - comandi base</title>
+      <link>https://davideriboli.github.io/blog/ffmpeg-comandi-base/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/ffmpeg-comandi-base/</guid>
+      <description>Il post è in perenne aggiornamento: quando mi serve un comando particolare, lo cerco e poi me lo appunto qui. Documentazione di riferimento principale: https://is.gd/0eLxsR.
+Restituisce un singolo fotogramma come immagine (ad esempio cerca la posizione 0h:0m:14sec:435msec e ne trasforma il frame in un file .png):
+ffmpeg -i input.flv -ss 00:00:14.435 -vframes 1 out.png Restituisce una immagine ogni secondo, nominandole in sequenza out1.png, out2.png, out3.png, etc.
+ffmpeg -i input.flv -vf fps=1 out%d.</description>
+    </item>
+    
+    <item>
+      <title>Kim Asendorf Pixel Sorting</title>
+      <link>https://davideriboli.github.io/blog/asendorf-pixel-sorting/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/asendorf-pixel-sorting/</guid>
+      <description>Lo sketch originale di Kim Asendorf che mostrò per primo cosa si potesse ottenere col pixel sorting è ancora disponibile su GitHub .
+E funziona…
+/* ASDF Pixel Sort Kim Asendorf | 2010 | kimasendorf.com sorting modes 0 = black 1 = brightness 2 = white */ int mode = 1; // image path is relative to sketch directory PImage img; String imgFileName = &#34;MyImage&#34;; String fileType = &#34;png&#34;; int loops = 1; // threshold values to determine sorting start and end pixels int blackValue = -16000000; int brightnessValue = 60; int whiteValue = -13000000; int row = 0; int column = 0; boolean saved = false; void setup() { img = loadImage(imgFileName+&#34;</description>
+    </item>
+    
+    <item>
+      <title>Link</title>
+      <link>https://davideriboli.github.io/blog/link/</link>
+      <pubDate>Thu, 04 Jun 2020 09:19:29 -0400</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/link/</guid>
+      <description>Glitch  GlitchArt  Glitchet Resources   Varia  Blogging like an hacker  Mozart Musikalisches Würfelspiel  Oblique Strategies  Reality Studio  Videorative Portrait of Randall Okita  What is Generative Art?   </description>
+    </item>
+    
+  </channel>
+</rss>

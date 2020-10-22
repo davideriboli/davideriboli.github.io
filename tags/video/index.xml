@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video on Void Draw</title>
+    <link>https://davideriboli.github.io/tags/video/</link>
+    <description>Recent content in video on Void Draw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FFMPEG - comandi base</title>
+      <link>https://davideriboli.github.io/blog/ffmpeg-comandi-base/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/ffmpeg-comandi-base/</guid>
+      <description>Il post è in perenne aggiornamento: quando mi serve un comando particolare, lo cerco e poi me lo appunto qui. Documentazione di riferimento principale: https://is.gd/0eLxsR.
+Restituisce un singolo fotogramma come immagine (ad esempio cerca la posizione 0h:0m:14sec:435msec e ne trasforma il frame in un file .png):
+ffmpeg -i input.flv -ss 00:00:14.435 -vframes 1 out.png Restituisce una immagine ogni secondo, nominandole in sequenza out1.png, out2.png, out3.png, etc.
+ffmpeg -i input.flv -vf fps=1 out%d.</description>
+    </item>
+    
+  </channel>
+</rss>

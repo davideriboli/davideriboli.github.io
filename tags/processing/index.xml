@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>processing on Void Draw</title>
+    <link>https://davideriboli.github.io/tags/processing/</link>
+    <description>Recent content in processing on Void Draw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kim Asendorf Pixel Sorting</title>
+      <link>https://davideriboli.github.io/blog/asendorf-pixel-sorting/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/asendorf-pixel-sorting/</guid>
+      <description>Lo sketch originale di Kim Asendorf che mostrò per primo cosa si potesse ottenere col pixel sorting è ancora disponibile su GitHub .
+E funziona…
+/* ASDF Pixel Sort Kim Asendorf | 2010 | kimasendorf.com sorting modes 0 = black 1 = brightness 2 = white */ int mode = 1; // image path is relative to sketch directory PImage img; String imgFileName = &#34;MyImage&#34;; String fileType = &#34;png&#34;; int loops = 1; // threshold values to determine sorting start and end pixels int blackValue = -16000000; int brightnessValue = 60; int whiteValue = -13000000; int row = 0; int column = 0; boolean saved = false; void setup() { img = loadImage(imgFileName+&#34;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ImageMagick in Windows con Cygwin</title>
+      <link>https://davideriboli.github.io/blog/imagemagick-in-win/</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/imagemagick-in-win/</guid>
+      <description>Immagine di input Qualche mese fa, un mio studente ISIA-Urbino ha trovato uno script ImageMagick molto interessante. Con poche linee di codice (che abbiamo un po’ modificato) è possibile ritagliare una immagine in un qualsiasi numero di tessere di qualsiasi dimensione e ricombinarle in una seconda immagine, montate randomicamente.
+Trattandosi di ImageMagick, lo script gira senza problemi in Linux e anche in Macintosh, ma sotto Windows non se ne parla, almeno non senza ricorrere a un qualche accrocco .</description>
+    </item>
+    
     <item>
       <title>FFMPEG - comandi base</title>
       <link>https://davideriboli.github.io/blog/ffmpeg-comandi-base/</link>

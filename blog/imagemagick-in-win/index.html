@@ -2,12 +2,12 @@
 <html lang="en-us">
 
 <head>
-  <title>FFMPEG - comandi base | Void Draw</title>
+  <title>ImageMagick in Windows con Cygwin | Void Draw</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="Un memorandum personale dei migliori comandi FFMPEG">
-  <meta name="keywords" content="ffmpeg">
+  <meta name="description" content="Come eseguire script di Imagemagick in Windows grazie a Cygwin">
+  <meta name="keywords" content="imagemagick, windows, bash, script, cygwin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="FFMPEG - comandi base" />
-  <meta name="twitter:description" content="Un memorandum personale dei migliori comandi FFMPEG"/>
+  <meta name="twitter:title" content="ImageMagick in Windows con Cygwin" />
+  <meta name="twitter:description" content="Come eseguire script di Imagemagick in Windows grazie a Cygwin"/>
   <meta name="twitter:site" content="https://twitter.com/DavideRiboli" />
   <meta name="twitter:creator" content="https://twitter.com/DavideRiboli" />
   
@@ -55,9 +55,9 @@
             "@id": "https:\/\/davideriboli.github.io"
       },
       "articleSection" : "blog",
-      "name" : "FFMPEG - comandi base",
-      "headline" : "FFMPEG - comandi base",
-      "description" : "Un memorandum personale dei migliori comandi FFMPEG",
+      "name" : "ImageMagick in Windows con Cygwin",
+      "headline" : "ImageMagick in Windows con Cygwin",
+      "description" : "Come eseguire script di Imagemagick in Windows grazie a Cygwin",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -65,11 +65,11 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2020",
-      "datePublished": "2020-06-05 00:00:00 \u002b0000 UTC",
-      "dateModified" : "2020-06-05 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/davideriboli.github.io\/blog\/ffmpeg-comandi-base\/",
-      "wordCount" : "111",
-      "keywords" : ["ffmpeg", "Blog"]
+      "datePublished": "2020-11-04 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2020-11-04 00:00:00 \u002b0000 UTC",
+      "url" : "https:\/\/davideriboli.github.io\/blog\/imagemagick-in-win\/",
+      "wordCount" : "243",
+      "keywords" : ["imagemagick, windows, bash, script, cygwin", "Blog"]
     }
   
   </script>
@@ -113,22 +113,51 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">FFMPEG - comandi base</h1>
-            <time datetime="2020-06-05 00:00:00 &#43;0000 UTC" class="post__date">5 Jun 2020</time> 
+            <h1 id="post__title">ImageMagick in Windows con Cygwin</h1>
+            <time datetime="2020-11-04 00:00:00 &#43;0000 UTC" class="post__date">4 Nov 2020</time> 
           </header>
           <article class="post__content">
               
-<p>Il post è in perenne aggiornamento: quando mi serve un comando particolare, lo cerco e poi me lo appunto qui. Documentazione di riferimento principale: <a href="https://is.gd/0eLxsR">https://is.gd/0eLxsR</a>.</p>
-<p><em>Restituisce un singolo fotogramma come immagine
-(ad esempio cerca la posizione 0h:0m:14sec:435msec e ne trasforma il
-frame in un file .png):</em></p>
-<pre><code class="language-shell">ffmpeg -i input.flv -ss 00:00:14.435 -vframes 1 out.png</code></pre>
-<p><em>Restituisce una immagine ogni secondo, nominandole in sequenza out1.png, out2.png, out3.png, etc.</em></p>
-<pre><code class="language-shell">ffmpeg -i input.flv -vf fps=1 out%d.png</code></pre>
-<p><em>Restituisce una immagine ogni minuto, nominandole in sequenza img001.jpg, img002.jpg, img003.jpg, etc. Il comando %03d impone un ordinamento a tre cifre.</em></p>
-<pre><code class="language-shell">ffmpeg -i myvideo.avi -vf fps=1/60 img%03d.jpg</code></pre>
-<p><em>Restituisce una immagine ogni 10 minuti.</em></p>
-<pre><code class="language-shell">ffmpeg -i test.flv -vf fps=1/600 thumb%04d.bmp</code></pre>
+<p><em>Immagine di input</em>
+<img src="/blog/imagemagick-in-win/input.png" alt="Immagine di input"></p>
+<p>Qualche mese fa, un mio studente ISIA-Urbino ha trovato uno <em>script</em> <a href="http://www.imagemagick.org/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>ImageMagick</a>
+ molto interessante. Con poche linee di codice (che abbiamo un po’ modificato) è possibile ritagliare una immagine in un qualsiasi numero di tessere di qualsiasi dimensione e ricombinarle in una seconda immagine, montate randomicamente.</p>
+<p>Trattandosi di ImageMagick, lo <em>script</em> gira senza problemi in Linux e anche in Macintosh, ma sotto Windows non se ne parla, almeno non senza ricorrere a un <a href="https://www.imagemagick.org/Usage/windows/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>qualche accrocco</a>
+. Dopo averle provate un po’ tutte, <a href="https://www.cygwin.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Cygwin</a>
+ è risultata la scelta migliore. Ecco i passi fondamentali:</p>
+<p>Installare ImageMagick e Cygwin dal sito ufficiale oppure sotto Chocolatey:</p>
+<pre><code class="language-shell">choco install imagemagick cygwin -y</code></pre>
+<p>All’interno della <em>directory</em> dove è stato installato Cygwin c’è una <em>subdirectory</em> Home, dentro Home c’è un’altra <em>subdirectory</em> col vostro nome utente e lì va piazzata la cartella dello <em>script</em>. I comandi di esecuzione poi sono i soliti comandi <em>shell</em>:</p>
+<pre><code class="language-shell">cd cartelladelloscript
+
+./nomedelloscript.sh</code></pre>
+<p>Questo è lo script:</p>
+<pre><code class="language-shell">#!/bin/bash
+echo "Preparazione..."
+origgeom=$(identify -format %g input.jpg)
+echo "Analisi dimensioni... Ok!"
+echo $origgeom
+newgeom=$(convert input.jpg -format "%[fx:int(w/100)*50]x%[fx:int(h/50)*100]" info:)
+sleep 5
+echo "Calcolo dimensioni e immagini... Ok!"
+echo $newgeom
+convert input.jpg -resize $newgeom -crop 100x50@ tile.png
+sleep 10
+echo "Taglio... Ok!"
+montage -background none -geometry +0+0 $(ls tile*png | awk 'BEGIN{srand()}{print rand() "\t" $0}' | sort -n | cut -f2-) JPG:- | convert JPG: -resize ${origgeom}! output.jpg
+echo "Generazione montaggio casuale... Ok!"</code></pre>
+<p>Con lo stesso sistema è possibile far girare script Imagmagick anche più complessi.</p>
+<p><em>Immagine di output</em></p>
+<p><img src="/blog/imagemagick-in-win/output.jpg" alt="Immagine di output"></p>
 
 
               
@@ -138,25 +167,17 @@ frame in un file .png):</em></p>
 <ul class="tags__list">
     
     <li class="tag__item">
-        <a class="tag__link" href="https://davideriboli.github.io/tags/video/">video</a>
-    </li>
-    <li class="tag__item">
         <a class="tag__link" href="https://davideriboli.github.io/tags/cmd/">cmd</a>
     </li></ul>
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/asendorf-pixel-sorting/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/ffmpeg-comandi-base/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Kim Asendorf Pixel Sorting</span>
+        <span class="pagination__title">FFMPEG - comandi base</span>
     </a>
   
 
-  
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/imagemagick-in-win/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >ImageMagick in Windows con Cygwin</span>
-    </a>
   
 </div>
 

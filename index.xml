@@ -15,7 +15,7 @@
       
       <guid>https://davideriboli.github.io/blog/imagemagick-in-win/</guid>
       <description>Immagine di input Qualche mese fa, un mio studente ISIA-Urbino ha trovato uno script ImageMagick molto interessante. Con poche linee di codice (che abbiamo un po’ modificato) è possibile ritagliare una immagine in un qualsiasi numero di tessere di qualsiasi dimensione e ricombinarle in una seconda immagine, montate randomicamente.
-Trattandosi di ImageMagick, lo script gira senza problemi in Linux e anche in Macintosh, ma sotto Windows non se ne parla, almeno non senza ricorrere a un qualche accrocco .</description>
+Trattandosi di ImageMagick, lo script gira senza problemi in Linux (sapete quel che dovete fare) e anche in Macintosh (guardate qui ), ma sotto Windows non se ne parla, almeno non senza ricorrere a un qualche accrocco .</description>
     </item>
     
     <item>

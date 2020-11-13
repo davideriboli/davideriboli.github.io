@@ -4,26 +4,71 @@
   
   <url>
     <loc>https://davideriboli.github.io/</loc>
-    <lastmod>2020-11-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davideriboli.github.io/blog/</loc>
-    <lastmod>2020-11-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/blog/choco-101/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davideriboli.github.io/tags/cmd/</loc>
-    <lastmod>2020-11-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://davideriboli.github.io/blog/imagemagick-in-win/</loc>
-    <lastmod>2020-11-04T00:00:00+00:00</lastmod>
+    <loc>https://davideriboli.github.io/tags/git/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/blog/git-comandi-base/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/blog/git-delete-commit/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/blog/gource/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davideriboli.github.io/tags/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/tags/touchdesigner/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/blog/td-pulsanti-x-tutti/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/tags/web/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/blog/wp-query-url/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davideriboli.github.io/blog/imagemagick-in-win/</loc>
     <lastmod>2020-11-04T00:00:00+00:00</lastmod>
   </url>
   

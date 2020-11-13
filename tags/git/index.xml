@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Void Draw</title>
+    <link>https://davideriboli.github.io/tags/git/</link>
+    <description>Recent content in git on Void Draw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GIT - Comandi base</title>
+      <link>https://davideriboli.github.io/blog/git-comandi-base/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/git-comandi-base/</guid>
+      <description>Crea un nuovo repo locale:
+git init Scarica un repo online, senza submoduli:
+git clone /path/to/repository Aggiunge al proprio un repo in forma di submodulo.
+git submodule add /path/to/repository/to/add/to/your Scarica un repo online, coi submoduli:
+git clone --recursive /path/to/repository Aggiunge uno o tutti i file allo staging (index):
+git add &amp;lt;filename&amp;gt; git add * Aggiunge tutte le modifiche al commit:
+git commit -a Come il precedente, ma senza la spina nel culo del commit message:</description>
+    </item>
+    
+    <item>
+      <title>GIT - Eliminare tutti i commit dal log di un repository</title>
+      <link>https://davideriboli.github.io/blog/git-delete-commit/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/git-delete-commit/</guid>
+      <description>Il modo giusto di procedere quando vuoi nuclearizzare un repo, ma non c&amp;rsquo;è verso di azzerare quella dannata, chilometrica lista di commit.
+Logicamente, i comandi vanno inseriti uno per volta.
+# Per prima cosa, facciamo checkout git checkout --orphan latest_branch # Poi aggiungiamo tutti file del nuovo repo git add -A # E prepariamo il primo commit del nuovo corso git commit -am &#34;Messaggio&#34; # Eliminiamo il branch git branch -D master # Portiamo il branch attuale ad essere il nuovo master git branch -m master # E forziamo un update git push -f origin master  E vaffanculo anche ai chilometri di commit&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Gource</title>
+      <link>https://davideriboli.github.io/blog/gource/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/gource/</guid>
+      <description>Gource sito ufficiale: https://gource.io/.
+Sintassi del comando base (deve essere scritto su una riga sola):
+gource -f -1280x720 &amp;ndash;camera-mode track &amp;ndash;background 333333 &amp;ndash;title &amp;ldquo;YOUR TITLE&amp;rdquo; \ &amp;ndash;hide &amp;ldquo;mouse,dirnames&amp;rdquo; &amp;ndash;seconds-per-day 0.1 &amp;ndash;auto-skip-seconds 1 -o - \ | ffmpeg -y -r 24 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast \ -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4
+Stesso comando, già formattato su una riga sola:
+gource -f -1280x720 --camera-mode track --background 333333 --title &#34;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,12 +2,12 @@
 <html lang="en-us">
 
 <head>
-  <title>ImageMagick in Windows con Cygwin | Void Draw</title>
+  <title>Touchdesigner - Più pulsanti per tutti | Void Draw</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="Come eseguire script di Imagemagick in Windows grazie a Cygwin">
-  <meta name="keywords" content="imagemagick, windows, bash, script, cygwin">
+  <meta name="description" content="Un TOE super-semplice che uso per introdurre i miei studenti all&#39;uso dei pulsanti in TD">
+  <meta name="keywords" content="asendorf , kim asendorf , processing , pixel sorting">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ImageMagick in Windows con Cygwin" />
-  <meta name="twitter:description" content="Come eseguire script di Imagemagick in Windows grazie a Cygwin"/>
+  <meta name="twitter:title" content="Touchdesigner - Più pulsanti per tutti" />
+  <meta name="twitter:description" content="Un TOE super-semplice che uso per introdurre i miei studenti all&amp;#39;uso dei pulsanti in TD"/>
   <meta name="twitter:site" content="https://twitter.com/DavideRiboli" />
   <meta name="twitter:creator" content="https://twitter.com/DavideRiboli" />
   
@@ -55,9 +55,9 @@
             "@id": "https:\/\/davideriboli.github.io"
       },
       "articleSection" : "blog",
-      "name" : "ImageMagick in Windows con Cygwin",
-      "headline" : "ImageMagick in Windows con Cygwin",
-      "description" : "Come eseguire script di Imagemagick in Windows grazie a Cygwin",
+      "name" : "Touchdesigner - Più pulsanti per tutti",
+      "headline" : "Touchdesigner - Più pulsanti per tutti",
+      "description" : "Un TOE super-semplice che uso per introdurre i miei studenti all\u0027uso dei pulsanti in TD",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -65,11 +65,11 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2020",
-      "datePublished": "2020-11-04 00:00:00 \u002b0000 UTC",
-      "dateModified" : "2020-11-04 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/davideriboli.github.io\/blog\/imagemagick-in-win\/",
-      "wordCount" : "261",
-      "keywords" : ["imagemagick, windows, bash, script, cygwin", "Blog"]
+      "datePublished": "2020-11-13 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2020-11-13 00:00:00 \u002b0000 UTC",
+      "url" : "https:\/\/davideriboli.github.io\/blog\/td-pulsanti-x-tutti\/",
+      "wordCount" : "21",
+      "keywords" : ["asendorf", "kim asendorf", "processing", "pixel sorting", "Blog"]
     }
   
   </script>
@@ -113,56 +113,18 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">ImageMagick in Windows con Cygwin</h1>
-            <time datetime="2020-11-04 00:00:00 &#43;0000 UTC" class="post__date">4 Nov 2020</time> 
+            <h1 id="post__title">Touchdesigner - Più pulsanti per tutti</h1>
+            <time datetime="2020-11-13 00:00:00 &#43;0000 UTC" class="post__date">13 Nov 2020</time> 
           </header>
           <article class="post__content">
               
-<p><em>Immagine di input</em>
-<img src="/blog/imagemagick-in-win/input.png" alt="Immagine di input"></p>
-<p>Qualche mese fa, un mio studente ISIA-Urbino ha trovato uno <em>script</em> <a href="http://www.imagemagick.org/" 
+<p>Un TOE super-semplice che uso per introdurre i miei studenti all&rsquo;uso dei pulsanti in TD.</p>
+<p><img src="/blog/td-pulsanti-x-tutti/img.png" alt="TD Network"></p>
+<p>Vedi il codice su <a href="https://github.com/davideriboli/Generative-Art-with-Touchdesigner/tree/master/DRNodes/More-Buttons-4-The-Masses" 
   
    target="_blank" rel="noreferrer noopener" 
->ImageMagick</a>
- molto interessante. Con poche linee di codice (che abbiamo un po’ modificato) è possibile ritagliare una immagine in un qualsiasi numero di tessere di qualsiasi dimensione e ricombinarle in una seconda immagine, montate randomicamente.</p>
-<p>Trattandosi di ImageMagick, lo <em>script</em> gira senza problemi in Linux (sapete quel che dovete fare) e anche in Macintosh (guardate <a href="https://imagemagick.org/script/download.php" 
-  
-   target="_blank" rel="noreferrer noopener" 
->qui</a>
-), ma sotto Windows non se ne parla, almeno non senza ricorrere a un <a href="https://www.imagemagick.org/Usage/windows/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->qualche accrocco</a>
-. Dopo averle provate un po’ tutte, <a href="https://www.cygwin.com/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Cygwin</a>
- è risultata la scelta migliore. Ecco i passi fondamentali:</p>
-<p>Installare Cygwin dal sito ufficiale o, meglio, via Chocolatey:</p>
-<pre><code class="language-shell">choco install imagemagick cygwin -y</code></pre>
-<p>Dall&rsquo;interno di Cygwin, aggiungere ImageMagick a Cygwin attraverso l&rsquo;installer grafico.</p>
-<p>Ora, all’interno della <em>directory</em> dove è stato installato Cygwin c’è una <em>subdirectory</em> Home, dentro Home c’è un’altra <em>subdirectory</em> col vostro nome utente e lì va piazzata la cartella dello <em>script</em>. I comandi di esecuzione poi sono i soliti comandi <em>shell</em>:</p>
-<pre><code class="language-shell">cd cartelladelloscript
-
-./nomedelloscript.sh</code></pre>
-<p>Questo è lo script:</p>
-<pre><code class="language-shell">#!/bin/bash
-echo "Preparazione..."
-origgeom=$(identify -format %g input.jpg)
-echo "Analisi dimensioni... Ok!"
-echo $origgeom
-newgeom=$(convert input.jpg -format "%[fx:int(w/10)*5]x%[fx:int(h/5)*10]" info:)
-sleep 5
-echo "Calcolo dimensioni e immagini... Ok!"
-echo $newgeom
-convert input.jpg -resize $newgeom -crop 10x5@ tile.png
-sleep 10
-echo "Taglio... Ok!"
-montage -background none -geometry +0+0 $(ls tile*png | awk 'BEGIN{srand()}{print rand() "\t" $0}' | sort -n | cut -f2-) JPG:- | convert JPG: -resize ${origgeom}! output.jpg
-echo "Generazione montaggio casuale... Ok!"</code></pre>
-<p>Con lo stesso sistema è possibile far girare script Imagmagick anche più complessi.</p>
-<p><em>Immagine di output</em></p>
-<p><img src="/blog/imagemagick-in-win/output.jpg" alt="Immagine di output"></p>
+>GitHub</a>
+.</p>
 
 
               
@@ -172,21 +134,21 @@ echo "Generazione montaggio casuale... Ok!"</code></pre>
 <ul class="tags__list">
     
     <li class="tag__item">
-        <a class="tag__link" href="https://davideriboli.github.io/tags/cmd/">cmd</a>
+        <a class="tag__link" href="https://davideriboli.github.io/tags/touchdesigner/">touchdesigner</a>
     </li></ul>
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/ffmpeg-comandi-base/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/wp-query-url/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">FFMPEG - comandi base</span>
+        <span class="pagination__title">WP - La query definitiva per aggiornare le URL di sistema</span>
     </a>
   
 
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/wp-query-url/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/gource/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >WP - La query definitiva per aggiornare le URL di sistema</span>
+      <span class="pagination__title" >Gource</span>
     </a>
   
 </div>

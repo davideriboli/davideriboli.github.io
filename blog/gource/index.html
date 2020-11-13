@@ -2,12 +2,12 @@
 <html lang="en-us">
 
 <head>
-  <title>ImageMagick in Windows con Cygwin | Void Draw</title>
+  <title>Gource | Void Draw</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="Come eseguire script di Imagemagick in Windows grazie a Cygwin">
-  <meta name="keywords" content="imagemagick, windows, bash, script, cygwin">
+  <meta name="description" content="Comando base per creare data visualization video da repository GitHub">
+  <meta name="keywords" content="git , github , gource , video">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ImageMagick in Windows con Cygwin" />
-  <meta name="twitter:description" content="Come eseguire script di Imagemagick in Windows grazie a Cygwin"/>
+  <meta name="twitter:title" content="Gource" />
+  <meta name="twitter:description" content="Comando base per creare data visualization video da repository GitHub"/>
   <meta name="twitter:site" content="https://twitter.com/DavideRiboli" />
   <meta name="twitter:creator" content="https://twitter.com/DavideRiboli" />
   
@@ -55,9 +55,9 @@
             "@id": "https:\/\/davideriboli.github.io"
       },
       "articleSection" : "blog",
-      "name" : "ImageMagick in Windows con Cygwin",
-      "headline" : "ImageMagick in Windows con Cygwin",
-      "description" : "Come eseguire script di Imagemagick in Windows grazie a Cygwin",
+      "name" : "Gource",
+      "headline" : "Gource",
+      "description" : "Comando base per creare data visualization video da repository GitHub",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -65,11 +65,11 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2020",
-      "datePublished": "2020-11-04 00:00:00 \u002b0000 UTC",
-      "dateModified" : "2020-11-04 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/davideriboli.github.io\/blog\/imagemagick-in-win\/",
-      "wordCount" : "261",
-      "keywords" : ["imagemagick, windows, bash, script, cygwin", "Blog"]
+      "datePublished": "2020-11-13 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2020-11-13 00:00:00 \u002b0000 UTC",
+      "url" : "https:\/\/davideriboli.github.io\/blog\/gource\/",
+      "wordCount" : "114",
+      "keywords" : ["git", "github", "gource", "video", "Blog"]
     }
   
   </script>
@@ -113,56 +113,23 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">ImageMagick in Windows con Cygwin</h1>
-            <time datetime="2020-11-04 00:00:00 &#43;0000 UTC" class="post__date">4 Nov 2020</time> 
+            <h1 id="post__title">Gource</h1>
+            <time datetime="2020-11-13 00:00:00 &#43;0000 UTC" class="post__date">13 Nov 2020</time> 
           </header>
           <article class="post__content">
               
-<p><em>Immagine di input</em>
-<img src="/blog/imagemagick-in-win/input.png" alt="Immagine di input"></p>
-<p>Qualche mese fa, un mio studente ISIA-Urbino ha trovato uno <em>script</em> <a href="http://www.imagemagick.org/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->ImageMagick</a>
- molto interessante. Con poche linee di codice (che abbiamo un po’ modificato) è possibile ritagliare una immagine in un qualsiasi numero di tessere di qualsiasi dimensione e ricombinarle in una seconda immagine, montate randomicamente.</p>
-<p>Trattandosi di ImageMagick, lo <em>script</em> gira senza problemi in Linux (sapete quel che dovete fare) e anche in Macintosh (guardate <a href="https://imagemagick.org/script/download.php" 
-  
-   target="_blank" rel="noreferrer noopener" 
->qui</a>
-), ma sotto Windows non se ne parla, almeno non senza ricorrere a un <a href="https://www.imagemagick.org/Usage/windows/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->qualche accrocco</a>
-. Dopo averle provate un po’ tutte, <a href="https://www.cygwin.com/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->Cygwin</a>
- è risultata la scelta migliore. Ecco i passi fondamentali:</p>
-<p>Installare Cygwin dal sito ufficiale o, meglio, via Chocolatey:</p>
-<pre><code class="language-shell">choco install imagemagick cygwin -y</code></pre>
-<p>Dall&rsquo;interno di Cygwin, aggiungere ImageMagick a Cygwin attraverso l&rsquo;installer grafico.</p>
-<p>Ora, all’interno della <em>directory</em> dove è stato installato Cygwin c’è una <em>subdirectory</em> Home, dentro Home c’è un’altra <em>subdirectory</em> col vostro nome utente e lì va piazzata la cartella dello <em>script</em>. I comandi di esecuzione poi sono i soliti comandi <em>shell</em>:</p>
-<pre><code class="language-shell">cd cartelladelloscript
+<p>Gource sito ufficiale: <a href="https://gource.io/" target="_blank" rel="noopener noreferrer"><a href="https://gource.io/">https://gource.io/</a></a>.</p>
+<p>Sintassi del comando base (deve essere scritto su una riga sola):</p>
+<p><em>gource -f -1280x720 &ndash;camera-mode track &ndash;background 333333 &ndash;title &ldquo;YOUR TITLE&rdquo; \ &ndash;hide &ldquo;mouse,dirnames&rdquo; &ndash;seconds-per-day 0.1 &ndash;auto-skip-seconds 1 -o - \ | ffmpeg -y -r 24 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast \ -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4</em></p>
+<p>Stesso comando, già formattato su una riga sola:</p>
+<pre><code class="language-shell">gource -f -1280x720 --camera-mode track --background 333333 --title "YOUR TITLE" \ --hide "mouse,dirnames" --seconds-per-day 0.1 --auto-skip-seconds 1 -o - \ | ffmpeg -y -r 24 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast \ -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4</code></pre>
+<p>Risultato:
+<br /><br /></p>
 
-./nomedelloscript.sh</code></pre>
-<p>Questo è lo script:</p>
-<pre><code class="language-shell">#!/bin/bash
-echo "Preparazione..."
-origgeom=$(identify -format %g input.jpg)
-echo "Analisi dimensioni... Ok!"
-echo $origgeom
-newgeom=$(convert input.jpg -format "%[fx:int(w/10)*5]x%[fx:int(h/5)*10]" info:)
-sleep 5
-echo "Calcolo dimensioni e immagini... Ok!"
-echo $newgeom
-convert input.jpg -resize $newgeom -crop 10x5@ tile.png
-sleep 10
-echo "Taglio... Ok!"
-montage -background none -geometry +0+0 $(ls tile*png | awk 'BEGIN{srand()}{print rand() "\t" $0}' | sort -n | cut -f2-) JPG:- | convert JPG: -resize ${origgeom}! output.jpg
-echo "Generazione montaggio casuale... Ok!"</code></pre>
-<p>Con lo stesso sistema è possibile far girare script Imagmagick anche più complessi.</p>
-<p><em>Immagine di output</em></p>
-<p><img src="/blog/imagemagick-in-win/output.jpg" alt="Immagine di output"></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/wmlpF8okfxM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 
 
               
@@ -172,21 +139,21 @@ echo "Generazione montaggio casuale... Ok!"</code></pre>
 <ul class="tags__list">
     
     <li class="tag__item">
-        <a class="tag__link" href="https://davideriboli.github.io/tags/cmd/">cmd</a>
+        <a class="tag__link" href="https://davideriboli.github.io/tags/git/">git</a>
     </li></ul>
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/ffmpeg-comandi-base/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/td-pulsanti-x-tutti/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">FFMPEG - comandi base</span>
+        <span class="pagination__title">Touchdesigner - Più pulsanti per tutti</span>
     </a>
   
 
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/wp-query-url/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/git-delete-commit/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >WP - La query definitiva per aggiornare le URL di sistema</span>
+      <span class="pagination__title" >GIT - Eliminare tutti i commit dal log di un repository</span>
     </a>
   
 </div>

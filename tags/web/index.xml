@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on Void Draw</title>
+    <link>https://davideriboli.github.io/tags/web/</link>
+    <description>Recent content in web on Void Draw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WP - La query definitiva per aggiornare le URL di sistema</title>
+      <link>https://davideriboli.github.io/blog/wp-query-url/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/wp-query-url/</guid>
+      <description>La query definitiva, quando si trasloca un sito WP.
+UPDATE wp_options SET option_value = replace(option_value, &#39;http://vecchiaURL&#39;, &#39;http://nuovaURL&#39;) WHERE option_name = &#39;home&#39; OR option_name = &#39;siteurl&#39;; UPDATE wp_posts SET guid = replace(guid, &#39;http://vecchiaURL&#39;,&#39;http://nuovaURL&#39;); UPDATE wp_posts SET post_content = replace(post_content, &#39;http://vecchiaURL&#39;, &#39;http://nuovaURL&#39;); UPDATE wp_postmeta SET meta_value = replace(meta_value,&#39;http://vecchiaURL&#39;,&#39;http://nuovaURL&#39;); Appena testata su un sito con più di 2.000 post e diversi godzillioni di media: burro e marmellata.</description>
+    </item>
+    
+  </channel>
+</rss>

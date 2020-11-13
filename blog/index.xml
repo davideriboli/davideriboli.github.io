@@ -7,7 +7,82 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Wed, 04 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chocolatey 101</title>
+      <link>https://davideriboli.github.io/blog/choco-101/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/choco-101/</guid>
+      <description>Installazione da admin powershell:
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;)) Pulizie di primavera:
+choco install choco-cleaner Ricercare software
+choco search nomepacchetto Installare software
+choco install nomepacchetto Disinstallare software
+choco uninstall nomepacchetto Aggiornare tutto il software installato
+choco upgrade all -y Elenco di tutto il software installato
+choco list --local-only</description>
+    </item>
+    
+    <item>
+      <title>GIT - Comandi base</title>
+      <link>https://davideriboli.github.io/blog/git-comandi-base/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/git-comandi-base/</guid>
+      <description>Crea un nuovo repo locale:
+git init Scarica un repo online, senza submoduli:
+git clone /path/to/repository Aggiunge al proprio un repo in forma di submodulo.
+git submodule add /path/to/repository/to/add/to/your Scarica un repo online, coi submoduli:
+git clone --recursive /path/to/repository Aggiunge uno o tutti i file allo staging (index):
+git add &amp;lt;filename&amp;gt; git add * Aggiunge tutte le modifiche al commit:
+git commit -a Come il precedente, ma senza la spina nel culo del commit message:</description>
+    </item>
+    
+    <item>
+      <title>GIT - Eliminare tutti i commit dal log di un repository</title>
+      <link>https://davideriboli.github.io/blog/git-delete-commit/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/git-delete-commit/</guid>
+      <description>Il modo giusto di procedere quando vuoi nuclearizzare un repo, ma non c&amp;rsquo;è verso di azzerare quella dannata, chilometrica lista di commit.
+Logicamente, i comandi vanno inseriti uno per volta.
+# Per prima cosa, facciamo checkout git checkout --orphan latest_branch # Poi aggiungiamo tutti file del nuovo repo git add -A # E prepariamo il primo commit del nuovo corso git commit -am &#34;Messaggio&#34; # Eliminiamo il branch git branch -D master # Portiamo il branch attuale ad essere il nuovo master git branch -m master # E forziamo un update git push -f origin master  E vaffanculo anche ai chilometri di commit&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Gource</title>
+      <link>https://davideriboli.github.io/blog/gource/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/gource/</guid>
+      <description>Gource sito ufficiale: https://gource.io/.
+Sintassi del comando base (deve essere scritto su una riga sola):
+gource -f -1280x720 &amp;ndash;camera-mode track &amp;ndash;background 333333 &amp;ndash;title &amp;ldquo;YOUR TITLE&amp;rdquo; \ &amp;ndash;hide &amp;ldquo;mouse,dirnames&amp;rdquo; &amp;ndash;seconds-per-day 0.1 &amp;ndash;auto-skip-seconds 1 -o - \ | ffmpeg -y -r 24 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast \ -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4
+Stesso comando, già formattato su una riga sola:
+gource -f -1280x720 --camera-mode track --background 333333 --title &#34;</description>
+    </item>
+    
+    <item>
+      <title>Touchdesigner - Più pulsanti per tutti</title>
+      <link>https://davideriboli.github.io/blog/td-pulsanti-x-tutti/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/td-pulsanti-x-tutti/</guid>
+      <description>Un TOE super-semplice che uso per introdurre i miei studenti all&amp;rsquo;uso dei pulsanti in TD.
+Vedi il codice su GitHub .</description>
+    </item>
+    
+    <item>
+      <title>WP - La query definitiva per aggiornare le URL di sistema</title>
+      <link>https://davideriboli.github.io/blog/wp-query-url/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/wp-query-url/</guid>
+      <description>La query definitiva, quando si trasloca un sito WP.
+UPDATE wp_options SET option_value = replace(option_value, &#39;http://vecchiaURL&#39;, &#39;http://nuovaURL&#39;) WHERE option_name = &#39;home&#39; OR option_name = &#39;siteurl&#39;; UPDATE wp_posts SET guid = replace(guid, &#39;http://vecchiaURL&#39;,&#39;http://nuovaURL&#39;); UPDATE wp_posts SET post_content = replace(post_content, &#39;http://vecchiaURL&#39;, &#39;http://nuovaURL&#39;); UPDATE wp_postmeta SET meta_value = replace(meta_value,&#39;http://vecchiaURL&#39;,&#39;http://nuovaURL&#39;); Appena testata su un sito con più di 2.000 post e diversi godzillioni di media: burro e marmellata.</description>
+    </item>
+    
     <item>
       <title>ImageMagick in Windows con Cygwin</title>
       <link>https://davideriboli.github.io/blog/imagemagick-in-win/</link>

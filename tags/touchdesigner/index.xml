@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>touchdesigner on Void Draw</title>
+    <link>https://davideriboli.github.io/tags/touchdesigner/</link>
+    <description>Recent content in touchdesigner on Void Draw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/touchdesigner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Touchdesigner - Più pulsanti per tutti</title>
+      <link>https://davideriboli.github.io/blog/td-pulsanti-x-tutti/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/td-pulsanti-x-tutti/</guid>
+      <description>Un TOE super-semplice che uso per introdurre i miei studenti all&amp;rsquo;uso dei pulsanti in TD.
+Vedi il codice su GitHub .</description>
+    </item>
+    
+  </channel>
+</rss>

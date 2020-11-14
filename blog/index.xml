@@ -7,7 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Farla finita con le scorie di Mac</title>
+      <link>https://davideriboli.github.io/blog/delete-mac-junk/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/delete-mac-junk/</guid>
+      <description>I comandi lavorano solo a partire dalla dir in cui vengono lanciati.
+del /s /q /f /a .DS_STORE del /s /q /f /a ._.*  </description>
+    </item>
+    
+    <item>
+      <title>Hugo &#43; GitHub Pages (sporco e veloce)</title>
+      <link>https://davideriboli.github.io/blog/hugo-github/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/hugo-github/</guid>
+      <description>Questo articolo era nato in inglese per un altro sito e sono troppo pigro per tradurlo di nuovo in italiano. Ma se non riuscite a capire che c&amp;rsquo;è scritto, è meglio che lasciate perdere: significa che è roba troppo complicata per voi.
+Ok… here you can find the right way to do it. It’s the very right way. And it’s long. And hard. But it’s right… And this is my (quick and dirty) way.</description>
+    </item>
+    
+    <item>
+      <title>P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server</title>
+      <link>https://davideriboli.github.io/blog/p5js-browsersync/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/p5js-browsersync/</guid>
+      <description>Di solito preferisco SublimeText sia per lavorare in Processing che in P5, ma in quest&amp;rsquo;ultimo caso l&amp;rsquo;editing può diventare una vera spina nel culo senza un server veloce da cui avere un feedaback. La ricetta qui sotto funziona anche in Mac (la gente Mela trova qui come usare brew per node+npm) eLinux.
+Installare Node.js via download regolare o con Choco/Brew.
+choco install nodejs Installare browser-sync via nodejs
+npm install -g browser-sync Creare una cartella di progetto P5.</description>
+    </item>
+    
     <item>
       <title>Chocolatey 101</title>
       <link>https://davideriboli.github.io/blog/choco-101/</link>

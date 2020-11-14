@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; GitHub Pages (sporco e veloce)</title>
+      <link>https://davideriboli.github.io/blog/hugo-github/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/hugo-github/</guid>
+      <description>Questo articolo era nato in inglese per un altro sito e sono troppo pigro per tradurlo di nuovo in italiano. Ma se non riuscite a capire che c&amp;rsquo;è scritto, è meglio che lasciate perdere: significa che è roba troppo complicata per voi.
+Ok… here you can find the right way to do it. It’s the very right way. And it’s long. And hard. But it’s right… And this is my (quick and dirty) way.</description>
+    </item>
+    
     <item>
       <title>GIT - Comandi base</title>
       <link>https://davideriboli.github.io/blog/git-comandi-base/</link>

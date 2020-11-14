@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>p5 on Void Draw</title>
+    <link>https://davideriboli.github.io/tags/p5/</link>
+    <description>Recent content in p5 on Void Draw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davideriboli.github.io/tags/p5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server</title>
+      <link>https://davideriboli.github.io/blog/p5js-browsersync/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davideriboli.github.io/blog/p5js-browsersync/</guid>
+      <description>Di solito preferisco SublimeText sia per lavorare in Processing che in P5, ma in quest&amp;rsquo;ultimo caso l&amp;rsquo;editing può diventare una vera spina nel culo senza un server veloce da cui avere un feedaback. La ricetta qui sotto funziona anche in Mac (la gente Mela trova qui come usare brew per node+npm) eLinux.
+Installare Node.js via download regolare o con Choco/Brew.
+choco install nodejs Installare browser-sync via nodejs
+npm install -g browser-sync Creare una cartella di progetto P5.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,12 +2,12 @@
 <html lang="en-us">
 
 <head>
-  <title>Chocolatey 101 | Void Draw</title>
+  <title>Hugo &#43; GitHub Pages (sporco e veloce) | Void Draw</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="Comandi base per Chocolatey">
-  <meta name="keywords" content="chocolatey">
+  <meta name="description" content="Costruire un sito veloce, in un modo veloce">
+  <meta name="keywords" content="hugo , github">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chocolatey 101" />
-  <meta name="twitter:description" content="Comandi base per Chocolatey"/>
+  <meta name="twitter:title" content="Hugo &#43; GitHub Pages (sporco e veloce)" />
+  <meta name="twitter:description" content="Costruire un sito veloce, in un modo veloce"/>
   <meta name="twitter:site" content="https://twitter.com/DavideRiboli" />
   <meta name="twitter:creator" content="https://twitter.com/DavideRiboli" />
   
@@ -55,9 +55,9 @@
             "@id": "https:\/\/davideriboli.github.io"
       },
       "articleSection" : "blog",
-      "name" : "Chocolatey 101",
-      "headline" : "Chocolatey 101",
-      "description" : "Comandi base per Chocolatey",
+      "name" : "Hugo \u002b GitHub Pages (sporco e veloce)",
+      "headline" : "Hugo \u002b GitHub Pages (sporco e veloce)",
+      "description" : "Costruire un sito veloce, in un modo veloce",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -65,11 +65,11 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2020",
-      "datePublished": "2020-11-13 00:00:00 \u002b0000 UTC",
-      "dateModified" : "2020-11-13 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/davideriboli.github.io\/blog\/choco-101\/",
-      "wordCount" : "51",
-      "keywords" : ["chocolatey", "Blog"]
+      "datePublished": "2020-11-14 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2020-11-14 00:00:00 \u002b0000 UTC",
+      "url" : "https:\/\/davideriboli.github.io\/blog\/hugo-github\/",
+      "wordCount" : "373",
+      "keywords" : ["hugo", "github", "Blog"]
     }
   
   </script>
@@ -113,26 +113,49 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Chocolatey 101</h1>
-            <time datetime="2020-11-13 00:00:00 &#43;0000 UTC" class="post__date">13 Nov 2020</time> 
+            <h1 id="post__title">Hugo &#43; GitHub Pages (sporco e veloce)</h1>
+            <time datetime="2020-11-14 00:00:00 &#43;0000 UTC" class="post__date">14 Nov 2020</time> 
           </header>
           <article class="post__content">
               
-<p><em>Installazione</em>
-<em>da admin powershell</em>:</p>
-<pre><code class="language-shell">Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))</code></pre>
-<p><em>Pulizie di primavera:</em></p>
-<pre><code class="language-shell">choco install choco-cleaner</code></pre>
-<p><em>Ricercare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco search nomepacchetto</code></pre>
-<p><em>Installare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco install nomepacchetto</code></pre>
-<p><em>Disinstallare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco uninstall nomepacchetto</code></pre>
-<p><em>Aggiornare tutto il software installato</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco upgrade all -y</code></pre>
-<p><em>Elenco di tutto il software installato</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco list --local-only</code></pre>
+<p><em>Questo articolo era nato in inglese per un altro sito e sono troppo pigro per tradurlo di nuovo in italiano. Ma se non riuscite a capire che c&rsquo;è scritto, è meglio che lasciate perdere: significa che è roba troppo complicata per voi.</em></p>
+<p>Ok… <a href="https://medium.com/swlh/hosting-a-hugo-blog-on-github-pages-with-travis-ci-e74a1d686f10">here</a> you can find the right way to do it. It’s the very right way. And it’s long. And hard. But it’s right… And this is my (quick and dirty) way.</p>
+<h4>3 - CHECK YOUR TOOLS</h4>
+<p>Before you start, I assume you:</p>
+<ol>
+ 	<li>know what Hugo and GitHub Pages are;</li>
+ 	<li>know how to use a terminal;</li>
+ 	<li>have installed hugo and git on your sys.</li>
+</ol>
+<h4>2 - BUILD OFFLINE</h4>
+<p>Navigate in your sys where you want to store your work and make a new site with Hugo.</p>
+<pre><code class="language-shell">hugo new site MyShinySite</code></pre>
+<p>Cd in your new site and launch server.</p>
+<pre><code class="language-shell"> cd MyShinySite
+
+hugo server --watch --disableFastRender</code></pre>
+<p>Complete your new site with template and contents.</p>
+<p>Stop the Hugo server with <em>CTRL + c</em> (on Linux) or <em>Right-CTRL + c</em> (on Windows).</p>
+<h4>1 - PREPARE TAKE OFF</h4>
+<p>Login to GitHub and make a new repo, named <em>yourusername.github.io</em>. Add a correct <em>README.md</em> and the <em>license</em> you prefer.</p>
+<p>Clone your new repo locally and launch a terminal where you want to store your repo.</p>
+<pre><code class="language-shell">git clone PutHereTheUrlOfYourRepo</code></pre>
+<p>(Optional) If you’re under a Linux distro, copy the README.md and License.md files to your Templates folder. I’ve added even a Post.md file for a quick kickstart of a new post.</p>
+<p>Go in your Hugo site folder and create the static files with:</p>
+<pre><code class="language-shell">hugo</code></pre>
+<p>Now you have a new folder, named <em>Public</em>.</p>
+<p>Go inside Public and add a<em> README.md</em> and a<em> License.md</em> (Linux guys here use the right click and the <em>New File</em> option; others can copy&amp;paste from the cloned repo).</p>
+<p>Copy all the files and folders inside your <em>Public</em>.</p>
+<p>Go in your cloned repo. Trash all the files and folders you see (select them one by one; do not use select all ‘cause you could destroy the invisble .GIT folder, fucking up everything). Paste the files and folders you’ve copied from Public.</p>
+<h4>0 - TAKE OFF!</h4>
+<p>Open a terminal in your cloned repo folder.</p>
+<pre><code class="language-shell">git add *
+
+git commit -a
+
+git push origin master</code></pre>
+<p>Done: you’re site is flying!</p>
+
 
               
           </article>
@@ -142,20 +165,26 @@
     
     <li class="tag__item">
         <a class="tag__link" href="https://davideriboli.github.io/tags/cmd/">cmd</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://davideriboli.github.io/tags/web/">web</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://davideriboli.github.io/tags/git/">git</a>
     </li></ul>
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/git-comandi-base/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/p5js-browsersync/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">GIT - Comandi base</span>
+        <span class="pagination__title">P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server</span>
     </a>
   
 
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/p5js-browsersync/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/delete-mac-junk/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server</span>
+      <span class="pagination__title" >Farla finita con le scorie di Mac</span>
     </a>
   
 </div>

@@ -2,12 +2,12 @@
 <html lang="en-us">
 
 <head>
-  <title>Chocolatey 101 | Void Draw</title>
+  <title>Farla finita con le scorie di Mac | Void Draw</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="Comandi base per Chocolatey">
-  <meta name="keywords" content="chocolatey">
+  <meta name="description" content="Come eliminare da Win tutti i file inutili generati da Mac">
+  <meta name="keywords" content="mac , macintosh , junk , file">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chocolatey 101" />
-  <meta name="twitter:description" content="Comandi base per Chocolatey"/>
+  <meta name="twitter:title" content="Farla finita con le scorie di Mac" />
+  <meta name="twitter:description" content="Come eliminare da Win tutti i file inutili generati da Mac"/>
   <meta name="twitter:site" content="https://twitter.com/DavideRiboli" />
   <meta name="twitter:creator" content="https://twitter.com/DavideRiboli" />
   
@@ -55,9 +55,9 @@
             "@id": "https:\/\/davideriboli.github.io"
       },
       "articleSection" : "blog",
-      "name" : "Chocolatey 101",
-      "headline" : "Chocolatey 101",
-      "description" : "Comandi base per Chocolatey",
+      "name" : "Farla finita con le scorie di Mac",
+      "headline" : "Farla finita con le scorie di Mac",
+      "description" : "Come eliminare da Win tutti i file inutili generati da Mac",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -65,11 +65,11 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2020",
-      "datePublished": "2020-11-13 00:00:00 \u002b0000 UTC",
-      "dateModified" : "2020-11-13 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/davideriboli.github.io\/blog\/choco-101\/",
-      "wordCount" : "51",
-      "keywords" : ["chocolatey", "Blog"]
+      "datePublished": "2020-11-14 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2020-11-14 00:00:00 \u002b0000 UTC",
+      "url" : "https:\/\/davideriboli.github.io\/blog\/delete-mac-junk\/",
+      "wordCount" : "24",
+      "keywords" : ["mac", "macintosh", "junk", "file", "Blog"]
     }
   
   </script>
@@ -113,26 +113,17 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Chocolatey 101</h1>
-            <time datetime="2020-11-13 00:00:00 &#43;0000 UTC" class="post__date">13 Nov 2020</time> 
+            <h1 id="post__title">Farla finita con le scorie di Mac</h1>
+            <time datetime="2020-11-14 00:00:00 &#43;0000 UTC" class="post__date">14 Nov 2020</time> 
           </header>
           <article class="post__content">
               
-<p><em>Installazione</em>
-<em>da admin powershell</em>:</p>
-<pre><code class="language-shell">Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))</code></pre>
-<p><em>Pulizie di primavera:</em></p>
-<pre><code class="language-shell">choco install choco-cleaner</code></pre>
-<p><em>Ricercare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco search nomepacchetto</code></pre>
-<p><em>Installare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco install nomepacchetto</code></pre>
-<p><em>Disinstallare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco uninstall nomepacchetto</code></pre>
-<p><em>Aggiornare tutto il software installato</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco upgrade all -y</code></pre>
-<p><em>Elenco di tutto il software installato</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco list --local-only</code></pre>
+<p>I comandi lavorano solo a partire dalla dir  in cui vengono lanciati.</p>
+<pre><code class="language-shell">del /s /q /f /a .DS_STORE
+
+del /s /q /f /a ._.*</code></pre><blockquote>
+</blockquote>
+
 
               
           </article>
@@ -146,17 +137,12 @@
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/git-comandi-base/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/hugo-github/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">GIT - Comandi base</span>
+        <span class="pagination__title">Hugo &#43; GitHub Pages (sporco e veloce)</span>
     </a>
   
 
-  
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/p5js-browsersync/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server</span>
-    </a>
   
 </div>
 

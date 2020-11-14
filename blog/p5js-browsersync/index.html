@@ -2,12 +2,12 @@
 <html lang="en-us">
 
 <head>
-  <title>Chocolatey 101 | Void Draw</title>
+  <title>P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server | Void Draw</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="Comandi base per Chocolatey">
-  <meta name="keywords" content="chocolatey">
+  <meta name="description" content="Una solida alternativa all&#39;editor di Processing">
+  <meta name="keywords" content="p5js , browsersync , server">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chocolatey 101" />
-  <meta name="twitter:description" content="Comandi base per Chocolatey"/>
+  <meta name="twitter:title" content="P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server" />
+  <meta name="twitter:description" content="Una solida alternativa all&amp;#39;editor di Processing"/>
   <meta name="twitter:site" content="https://twitter.com/DavideRiboli" />
   <meta name="twitter:creator" content="https://twitter.com/DavideRiboli" />
   
@@ -55,9 +55,9 @@
             "@id": "https:\/\/davideriboli.github.io"
       },
       "articleSection" : "blog",
-      "name" : "Chocolatey 101",
-      "headline" : "Chocolatey 101",
-      "description" : "Comandi base per Chocolatey",
+      "name" : "P5js - Preparare l\u0027ambiente di lavoro con BrowserSync Server",
+      "headline" : "P5js - Preparare l\u0027ambiente di lavoro con BrowserSync Server",
+      "description" : "Una solida alternativa all\u0027editor di Processing",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -65,11 +65,11 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2020",
-      "datePublished": "2020-11-13 00:00:00 \u002b0000 UTC",
-      "dateModified" : "2020-11-13 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/davideriboli.github.io\/blog\/choco-101\/",
-      "wordCount" : "51",
-      "keywords" : ["chocolatey", "Blog"]
+      "datePublished": "2020-11-14 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2020-11-14 00:00:00 \u002b0000 UTC",
+      "url" : "https:\/\/davideriboli.github.io\/blog\/p5js-browsersync\/",
+      "wordCount" : "198",
+      "keywords" : ["p5js", "browsersync", "server", "Blog"]
     }
   
   </script>
@@ -113,26 +113,28 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Chocolatey 101</h1>
-            <time datetime="2020-11-13 00:00:00 &#43;0000 UTC" class="post__date">13 Nov 2020</time> 
+            <h1 id="post__title">P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server</h1>
+            <time datetime="2020-11-14 00:00:00 &#43;0000 UTC" class="post__date">14 Nov 2020</time> 
           </header>
           <article class="post__content">
               
-<p><em>Installazione</em>
-<em>da admin powershell</em>:</p>
-<pre><code class="language-shell">Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))</code></pre>
-<p><em>Pulizie di primavera:</em></p>
-<pre><code class="language-shell">choco install choco-cleaner</code></pre>
-<p><em>Ricercare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco search nomepacchetto</code></pre>
-<p><em>Installare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco install nomepacchetto</code></pre>
-<p><em>Disinstallare software</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco uninstall nomepacchetto</code></pre>
-<p><em>Aggiornare tutto il software installato</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco upgrade all -y</code></pre>
-<p><em>Elenco di tutto il software installato</em></p>
-<pre class="EnlighterJSRAW" data-enlighter-language="generic">choco list --local-only</code></pre>
+<p>Di solito preferisco SublimeText sia per lavorare in Processing che in P5, ma in quest&rsquo;ultimo caso l&rsquo;editing può diventare una vera spina nel culo senza un server veloce da cui avere un feedaback. La ricetta qui sotto funziona anche in Mac (la gente Mela trova <a href="https://www.dyclassroom.com/howto-mac/how-to-install-nodejs-and-npm-on-mac-using-homebrew" target="_blank" rel="nofollow noopener noreferrer">qui come usare brew per node+npm</a>) eLinux.</p>
+<p>Installare Node.js via download regolare o con Choco/Brew.</p>
+<pre><code class="language-shell">choco install nodejs</code></pre>
+<p>Installare browser-sync via nodejs</p>
+<pre><code class="language-shell">npm install -g browser-sync</code></pre>
+<p>Creare una cartella di progetto P5.js con tutti i file necessari.</p>
+<p>Aprire la cartella in un terminale e lanciare:</p>
+<pre><code class="language-shell">browser-sync start --server --directory --files "*"</code></pre>
+<p>Aggiungere il codice richiesto (quando richiesto) al&rsquo;HTML index file del progetto.</p>
+<p>Lanciare di nuovo:</p>
+<pre><code class="language-shell">browser-sync start --server --directory --files "*"</code></pre>
+<p>Fatto : )</p>
+<p>Per fermare browser-sync: <strong>CTRL + C</strong>.</p>
+<p>Altri comandi browser-sync:<a href="https://browsersync.io/docs/command-line" target="_blank" rel="nofollow noopener noreferrer"> <a href="https://browsersync.io/docs/command-line">https://browsersync.io/docs/command-line</a></a>.</p>
+<h4>Aggiornamento</h4>
+<p>Da quest&rsquo;anno ho mollato SublimeText per VS Code. L&rsquo;editor di Microsoft mi pare davvero - almeno per il momento - il miglior editor di codice che ci sia in giro e nel godzillione di estensioni che gli ruotano intorno ce ne sono alcune ottime per lavorare con P5js. Però Browser-Sync è davvero un buon software che può tornare utile per un sacco di roba e quindi l&rsquo;articolo è rimasto.</p>
+
 
               
           </article>
@@ -142,20 +144,26 @@
     
     <li class="tag__item">
         <a class="tag__link" href="https://davideriboli.github.io/tags/cmd/">cmd</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://davideriboli.github.io/tags/web/">web</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://davideriboli.github.io/tags/p5/">p5</a>
     </li></ul>
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/git-comandi-base/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/choco-101/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">GIT - Comandi base</span>
+        <span class="pagination__title">Chocolatey 101</span>
     </a>
   
 
   
-    <a class="pagination__item" href="https://davideriboli.github.io/blog/p5js-browsersync/">
+    <a class="pagination__item" href="https://davideriboli.github.io/blog/hugo-github/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >P5js - Preparare l&#39;ambiente di lavoro con BrowserSync Server</span>
+      <span class="pagination__title" >Hugo &#43; GitHub Pages (sporco e veloce)</span>
     </a>
   
 </div>

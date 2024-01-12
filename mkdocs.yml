@@ -1,0 +1,84 @@
+yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Davide Riboli
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+theme:
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.prune
+    - navigation.top
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Modalità giorno
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-3
+        name: Modalità notte
+  font:
+    text: Domine
+    code: Fira Code
+  
+  language: it
+
+extra:
+  analytics:
+    provider: google
+    property: G-QT9PPLMPTW
+  generator: false
+  consent:
+    title: Cookie consent
+    description: >-
+      Questo sito non esegue alcun tipo di profilazione, né richiede alcun dato personale. I suoi cookie hanno il solo scopo di aggiornare il conteggio visiste e, se possibile, ripristinare le vostre preferenze di lettura.
+    actions:
+      - reject
+      - accept
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - blog:
+      pagination_per_page: 7
+      blog_dir: blog
+  - glightbox:
+     touchNavigation: true
+     loop: false
+     effect: zoom
+     slide_effect: slide
+     width: 100%
+     height: auto
+     zoomable: true
+     draggable: true
+     skip_classes:
+       - custom-skip-class-name
+     auto_caption: true
+     caption_position: bottom
+  - search:
+      lang: it
+
+nav:
+- Blog:
+  - blog/index.md 
+
+copyright: <a href="/info/">Colophon e licenze</a>

@@ -2,6 +2,8 @@
 draft: false
 date: 1997-06-15 
 slug: Biennale-di-Venezia-1997
+title: Katakripsi
+description: Dell'installazione realizzata con Leonardo Sonnoli alla Biennale di Venezia 1997 per Dimitri Alithinos.
 categories:
   - Immagini
 ---
@@ -17,7 +19,7 @@ categories:
 Dimitri Alithinos aveva fatto scavare una fossa sotto il padiglione, in cui erano state poi alloggiate diverse grandi vasche riempite di un materiale metallico simile all’oro liquido. Alla fine della Biennale, il pavimento è stato ricostruito, ma l’opera non è stata spostata (almeno da quello che so) e questo ne fa l’unica installazione permenente della Biennale.
 
 <figure markdown>
-  ![Katakripsi di Dimitri Alithinos](katakripsi.webp){ width="500" }
+  ![Katakripsi di Dimitri Alithinos](single/katakripsi.webp){ width="500" }
   <figcaption>Katakripsi di Dimitri Alithinos</figcaption>
 </figure>
 

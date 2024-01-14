@@ -2,6 +2,8 @@
 draft: false
 date: 2018-05-09 
 slug: Gran-Varieta-del-Nulla
+title: Gran Varietà del Nulla
+description: Testo del programma di sala per «Impreparati» di Baronciani, Calcagnini, Riboli (Pesaro, Teatro Rossini, 2018).
 categories:
   - Articoli
   - Teatro
@@ -16,7 +18,7 @@ categories:
 ---
 
 <figure markdown>
-  ![Impreparati, foto di scena](granvarietadelnulla.webp){ width="500" }
+  ![Impreparati, foto di scena](single/granvarietadelnulla.webp){ width="500" }
   <figcaption>Impreparati, foto di scena</figcaption>
 </figure>
 
@@ -39,6 +41,6 @@ A quarant’anni dalla morte di Aldo Moro e degli uomini della sua scorta, la Sc
 
 ---
 
-- *Il testo completo dello spettacolo è [scaricabile da qui](../../assets/PDF/Impreparati.pdf).*
-- *Il programma completo della serata è [scaricabile da qui](../../assets/PDF/GranVarietaDelNulla.pdf).*
+- *Il testo completo dello spettacolo è [scaricabile da qui](../../../../PDF/Impreparati.pdf).*
+- *Il programma completo della serata è [scaricabile da qui](../../../../PDF/GranVarietaDelNulla.pdf).*
 

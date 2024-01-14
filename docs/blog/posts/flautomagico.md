@@ -2,6 +2,8 @@
 draft: false
 date: 2016-10-27 
 slug: Flauto-Magico
+title: Fate Luce!
+description: Testo del programma di sala per «Il Flauto Magico» di W. A. Mozart (Fermo, Teatro dell'Aquila, 2016).
 categories:
   - Articoli
 ---
@@ -31,7 +33,7 @@ Ma la fragilità del costrutto narrativo dona all’opera la leggerezza richiest
 celebrato qualche secolo più tardi da Hayao Miyazaki ne *Il Castello errante di Howl*: uno scombiccherato edificio ineluttabilmente condannato al crollo da incontrovertibili leggi fisiche che però… vola.
 
 <figure markdown>
-  ![Teophilus Schweighardt Constantiens, Collegium Fraternitatis](flautomagico.webp){ width="500" }
+  ![Teophilus Schweighardt Constantiens, Collegium Fraternitatis](single/flautomagico.webp){ width="500" }
   <figcaption>Teophilus Schweighardt Constantiens, Collegium Fraternitatis</figcaption>
 </figure>
 

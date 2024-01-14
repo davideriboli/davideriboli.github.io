@@ -2,6 +2,8 @@
 draft: false
 date: 2004-09-12 
 slug: Mal-de-Fiori
+title: Il Mal de' Fiori e i friggitelli
+description: Di un concerto con Fernando Grillo e una non-regia con Isa Danieli.
 categories:
   - Teatro
 ---
@@ -15,7 +17,7 @@ categories:
 ---
 
 <figure markdown>
-  ![Davide Riboli e Fernando Grillo, foto di Tommaso Le Pera (Roma, 2004)](maldefiori.webp){ width="500" }
+  ![Davide Riboli e Fernando Grillo, foto di Tommaso Le Pera (Roma, 2004)](single/maldefiori.webp){ width="500" }
   <figcaption>Davide Riboli e Fernando Grillo,<br>foto di Tommaso Le Pera (Roma, 2004)</figcaption>
 </figure>
 
@@ -23,4 +25,4 @@ Lessi diverse liriche tratte dall'ultimo libro che Carmelo aveva dato alle stamp
 
 Dopo quell'esperienza e la scoperta del comune interesse verso l'Alchimia diventammo molto amici e per qualche tempo progettammo di affrontare insieme un'esecuzione della [Atalanta Fugiens](https://furnaceandfugue.org/). La sua perdita, dopo quelle di Maurizio Grande e Carmelo Bene, è stata un grande dolore.
 
-Sempre nel 2004, preparai alla lettura di quelle stesse liriche [Isa Danieli](../../assets/PDF/Isa.pdf). Non avevamo mai avuto occasione di conoscerci prima e fu un'esperienza molto bella. Ci mise in contatto Rodolfo Di Giammarco e andò a finire che più che provare si passava il tempo a raccontarci storie su Carmelo Bene ed Eduardo De Filippo. Poi si metteva a cucinare, perché ci teneva moltissimo ad essere lei a preparare la cena, e preparava spesso i friggitelli, sapendo quanto mi piacevano. Erano buonissimi e li mangiavamo sul suo terrazzo che aveva una magnifica vista su Napoli, chiacchierando tanto di nulla.
+Sempre nel 2004, preparai alla lettura di quelle stesse liriche [Isa Danieli](../../../../PDF/Isa.pdf). Non avevamo mai avuto occasione di conoscerci prima e fu un'esperienza molto bella. Ci mise in contatto Rodolfo Di Giammarco e andò a finire che più che provare si passava il tempo a raccontarci storie su Carmelo Bene ed Eduardo De Filippo. Poi si metteva a cucinare, perché ci teneva moltissimo ad essere lei a preparare la cena, e preparava spesso i friggitelli, sapendo quanto mi piacevano. Erano buonissimi e li mangiavamo sul suo terrazzo che aveva una magnifica vista su Napoli, chiacchierando tanto di nulla.

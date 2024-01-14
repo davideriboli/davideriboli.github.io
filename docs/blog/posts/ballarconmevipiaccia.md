@@ -2,6 +2,7 @@
 draft: false
 date: 2019-05-03 
 title: Ballar con me vi piaccia una galoppa
+description: Testo del programma di sala per «Il campanello» di Gaetano Donizetti (Cagliari, Teatro Lirico, 2019).
 slug: Ballar-con-me-vi-piaccia
 categories:
   - Articoli
@@ -41,7 +42,7 @@ Dunque, nella lingua vissuta, *farsa* indica tanto lo spettacolaccio *accio acci
 La verità (non troppo) segreta d’ogni teatro che non sia tragico è che il comico ha sempre un cuore triste, così come il dramma ha spesso un’origine esilarante. A ben vedere, nel canovaccio c’è assai poco di cui ridere: al già ricco Pistacchio non resta che il goder d’accumulare altra ricchezza, dopo che la sorte ha ripagato il suo desiderio di paternità con una moglie che porta in dote un baule di corna, una suocera *milf* e un amante della moglie che dorme sotto il suo stesso tetto.
 
 <figure markdown>
-  ![Anselmo Bucci, Autoritratto su tela antica del Padovanino](ballarconmevipiaccia.webp){ width="500" }
+  ![Anselmo Bucci, Autoritratto su tela antica del Padovanino](single/ballarconmevipiaccia.webp){ width="500" }
   <figcaption>Anselmo Bucci, Autoritratto su tela antica del Padovanino</figcaption>
 </figure>
 
@@ -51,4 +52,4 @@ Se non si trattasse d’una farsa, potrebbe essere un compendio dei temi trattat
 
 ---
 
-*Il programma completo, con gli interventi critici di Rossano Baronciani e altri autori e i disegni di Francesco Calcagnini, è [scaricabile da qui](../../assets/PDF/CampanelloCagliari.pdf).*
+*Il programma completo, con gli interventi critici di Rossano Baronciani e altri autori e i disegni di Francesco Calcagnini, è [scaricabile da qui](../../../../PDF/CampanelloCagliari.pdf).*

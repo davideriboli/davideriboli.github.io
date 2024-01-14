@@ -2,6 +2,8 @@
 draft: false
 date: 2003-03-16 
 slug: A-Carmelo-Bene
+title: A CB
+description: Del volume in ricordo di Carmelo Bene, a cura di Gioia Costa.
 categories:
   - Libri
 ---
@@ -21,7 +23,7 @@ _A CB sono parole nate quando la voce di Carmelo Bene si è spenta, nel marzo sc
 _Carmelo Bene era turco come i tramonti sul Bosforo, senza cuore come chi lo ha maciullato. Ma era anche amorevole, fedele, generoso. E tutto questo, come ha scritto Jean-Paul Manganaro, di lui non si sa. Tutto questo è deposto nelle parole che sceglieva, nella perfezione delle scene, nella cura dei dettagli. In quella trama di letture, di conversazioni e di ostinata ricerca che solo chi ha lavorato accanto a lui, chi lo ha visto provare, chi con lui ha cenato o chi ha avuto la fortuna di tacere quando non capiva, aspettando di capire, solo loro sanno e possono dire. Carmelo non c’è più. Resta la sua casa. Restano registrazioni, video, film, immagini, scritti, fotografie, trasmissioni. Restano le sue cose, i bei libri letti e annotati, le lampade con le perline, i quadri di Klossowski, i costumi, i velluti doppi. Resta la sua idea del teatro, così in anticipo da non essere ancora compresa. E resta ciò che ha lasciato a ciascuno, che torna improvviso. Il fotografo Sandro Becchetti, dandomi la bella immagine di CB che è in queste pagine, mi ha detto: “Sa perché Carmelo amava incondizionatamente le donne? Me lo disse quel giorno: Perché sono la cosa vivente più vicina alla morte”. E in Laforgue, in Gozzano, in Leopardi, in Majakowskij, in Dante, in Shakespeare, in Collodi, in Camus, in Marlowe, in De Musset, in Cervantes, in Benelli, in Prévost, in Hölderlin, in Stazio, in Jarry, in Kleist, in Teofilo Folengo Carmelo Bene ha sempre cercato, nella loro paura di morire, la sua ragione di vivere._
 
 <figure markdown>
-  ![«A CB», a cura di Gioia Costa](acb.webp){ width="500" }
+  ![«A CB», a cura di Gioia Costa](single/acb.webp){ width="500" }
   <figcaption>«A CB», a cura di Gioia Costa</figcaption>
 </figure>
 

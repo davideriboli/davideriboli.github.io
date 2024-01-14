@@ -2,6 +2,8 @@
 draft: false
 date: 2002-05-15 
 slug: Medea-Quirino-Principe-Davide-Riboli
+title: E Medea?
+description: Testo di Quirino Principe per il mio allestimento di «Medea» (Cortona, Teatro Capannone, 2002).
 categories:
   - Articoli
   - Teatro
@@ -32,7 +34,7 @@ Abbiamo detto «possiamo indicare», anche se la drammaturgia ideata e attivata 
 - la donna che sacrifica tutto all’amato straniero, anzi, all’amato «nemico», e tuttavia (o forse proprio per questo…?) è da lui crudelmente abbandonata e tradita.
 
 <figure markdown>
-  ![Renato Bertini, Ritratto di Lucia Ferrati](medea-principe.webp){ width="500" }
+  ![Renato Bertini, Ritratto di Lucia Ferrati](single/medea-principe.webp){ width="500" }
   <figcaption>Renato Bertini, Ritratto di Lucia Ferrati</figcaption>
 </figure>
 

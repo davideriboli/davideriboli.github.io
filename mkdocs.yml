@@ -1,6 +1,5 @@
-yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-
 site_name: Davide Riboli
+site_url: https://davideriboli.net
 
 markdown_extensions:
   - attr_list
@@ -58,6 +57,9 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
+  - social:
+      cards_layout_options:
+        background_color: #3b4252
   - blog:
       pagination_per_page: 7
       blog_dir: blog

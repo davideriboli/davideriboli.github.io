@@ -21,16 +21,16 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: deep orange
+      primary: blue grey
+      accent: light blue
       toggle:
         icon: material/brightness-7
         name: Modalità giorno
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: deep orange
+      primary: blue grey
+      accent: light blue
       toggle:
         icon: material/brightness-3
         name: Modalità notte

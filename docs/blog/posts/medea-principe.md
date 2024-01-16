@@ -11,7 +11,7 @@ categories:
 
 # E Medea? [di Quirino Principe]
 
-*Nel 2002 scrissi e allestii, insieme a Marco Facondini e Lucia Ferrati, una «Medea» per il cui programma di sala [Quirino Principe](https://it.wikipedia.org/wiki/Quirino_Principe) mi regalò questo testo.*
+*Nel 2002 scrissi e allestii, insieme a Marco Facondini e Lucia Ferrati, una [«Medea»](medea.md) per il cui programma di sala [Quirino Principe](https://it.wikipedia.org/wiki/Quirino_Principe) mi regalò questo testo.*
 
 <!-- more --> 
 

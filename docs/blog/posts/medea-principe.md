@@ -5,7 +5,7 @@ slug: Medea-Quirino-Principe-Davide-Riboli
 title: E Medea?
 description: Testo di Quirino Principe per il mio allestimento di «Medea» (Cortona, Teatro Capannone, 2002).
 categories:
-  - Articoli
+  - Testi vari
   - Teatro
 ---
 

@@ -5,7 +5,7 @@ slug: un-arte
 title: Catalogo delle cose perdute [Un'arte]
 description: Una poesia di Elizabeth Bishop che il mio Maestro Engaku Taino amava molto.
 categories:
-  - Articoli
+  - Poesia
 ---
 
 *Lavorare a questo sito è come comporre un catalogo delle cose perdute e questo mi ha fatto venire in mente una poesia di Elizabeth Bishop che Engaku Taino, il mio Maestro di Zen, amava molto. La liberissima traduzione è mia.* 

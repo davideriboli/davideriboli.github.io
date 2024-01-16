@@ -5,7 +5,7 @@ title: Ballar con me vi piaccia una galoppa
 description: Testo del programma di sala per «Il campanello» di Gaetano Donizetti (Cagliari, Teatro Lirico, 2019).
 slug: Ballar-con-me-vi-piaccia
 categories:
-  - Articoli
+  - Testi vari
   - Teatro
 ---
 

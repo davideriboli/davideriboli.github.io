@@ -5,7 +5,8 @@ slug: Flauto-Magico
 title: Fate Luce!
 description: Testo del programma di sala per «Il Flauto Magico» di W. A. Mozart (Fermo, Teatro dell'Aquila, 2016).
 categories:
-  - Articoli
+  - Testi vari
+  - Teatro
 ---
 
 # Fate Luce!

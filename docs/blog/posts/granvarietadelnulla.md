@@ -5,7 +5,7 @@ slug: Gran-Varieta-del-Nulla
 title: Gran Varietà del Nulla
 description: Testo del programma di sala per «Impreparati» di Baronciani, Calcagnini, Riboli (Pesaro, Teatro Rossini, 2018).
 categories:
-  - Articoli
+  - Testi vari
   - Teatro
 ---
 

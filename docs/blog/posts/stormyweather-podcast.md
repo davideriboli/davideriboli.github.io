@@ -8,7 +8,7 @@ categories:
   - Suoni
 ---  
  
-Un podcast di musica generativa e sperimentale.
+*Un podcast di musica generativa e sperimentale.*
 
 <!-- more --> 
 

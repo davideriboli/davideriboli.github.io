@@ -5,6 +5,7 @@ slug: Mal-de-Fiori
 title: Il Mal de' Fiori e i friggitelli
 description: Di un concerto con Fernando Grillo e una non-regia con Isa Danieli.
 categories:
+  - Poesia
   - Teatro
 ---
 

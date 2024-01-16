@@ -5,7 +5,7 @@ slug: con-chet-baker
 title: Quella sera con Chet Baker
 description: In morte di Giorgio Lugli.
 categories:
-  - Articoli
+  - Testi vari
 ---
 
 *Quella sera, c'ero.*

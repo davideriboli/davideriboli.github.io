@@ -5,7 +5,7 @@ slug: se-dovessi-morire
 title: Se io dovessi morire
 description: Una poesia di Emily Dickinson su cui sono inciampato per caso.
 categories:
-  - Articoli
+  - Poesia
 ---
 
 *Una poesia di Emily Dickinson su cui sono inciampato per caso e che mi piace molto. La liberissima traduzione è mia.*

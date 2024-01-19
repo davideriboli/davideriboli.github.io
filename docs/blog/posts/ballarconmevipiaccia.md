@@ -52,4 +52,4 @@ Se non si trattasse d’una farsa, potrebbe essere un compendio dei temi trattat
 
 ---
 
-*Il programma completo, con gli interventi critici di Rossano Baronciani e altri autori e i disegni di Francesco Calcagnini, è [scaricabile da qui](../../../../PDF/CampanelloCagliari.pdf).*
+*Il programma completo, con gli interventi critici di Rossano Baronciani e altri autori e i disegni di Francesco Calcagnini, è [scaricabile da qui](PDF/CampanelloCagliari.pdf).*

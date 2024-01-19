@@ -22,4 +22,4 @@ Alla fine, sono riuscito ad avere anche io i miei 45 secondi di esperimento e il
 
 Clic sul link per eseguire il file audio:
 
-- [♪ A Dark Stability Sound (45 sec.)](../../../../audio/ADarkStabilitySound.mp3)
+- [♪ A Dark Stability Sound (45 sec.)](audio/ADarkStabilitySound.mp3)

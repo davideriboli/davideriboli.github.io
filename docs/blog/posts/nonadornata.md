@@ -40,7 +40,7 @@ A Carmelo Bene piacque molto l'idea di un'attrice "fuori sync" da se stessa, men
 
 </div>
 
-Il testo lo avevo ricavato applicando la tecnica del _cut-up_ elaborata da William Burroughs e Brion Gysyn a scritti miei, di altri autori, articoli di giornale e altro materiale piuttosto eterogeneo e fu pubblicato dalla casa editrice "Il Ventaglio" (Roma, ASIN B0000ECQVE), con un disegno di Stefano Marotta in copertina e l'introduzione di Domenico Mongelli di cui potete leggere un estratto qui.
+Il testo lo avevo ricavato applicando la tecnica del _cut-up_ elaborata da William Burroughs e Brion Gysyn a scritti miei, di altri autori, articoli di giornale e altro materiale piuttosto eterogeneo e fu pubblicato dalla casa editrice "Il Ventaglio" (Roma, ASIN B0000ECQVE), con un disegno di Stefano Marotta in copertina e l'introduzione di Domenico Mongelli di cui potete leggere un estratto qui (pagina in costruzione).
 
 Negli anni successivi, dai materiali che mi erano serviti per la realizzazione di quello che con tutta probabilità è stato il primo spettacolo interamente recitato da un computer, ricavai una [versione Hypercard](https://it.wikipedia.org/wiki/HyperCard) che fu pubblicata dalla rivista Applicando e una [versione Twitter](https://twitter.com/NonAdornata).
 

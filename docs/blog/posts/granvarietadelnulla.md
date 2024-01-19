@@ -43,4 +43,5 @@ A quarant’anni dalla morte di Aldo Moro e degli uomini della sua scorta, la Sc
 
 - *Il testo completo dello spettacolo è [scaricabile da qui](PDF/Impreparati.pdf).*
 - *Il programma completo della serata è [scaricabile da qui](PDF/GranVarietaDelNulla.pdf).*
+- *Qualche foto di scena è [disponibile qui](impreparati.md).*
 

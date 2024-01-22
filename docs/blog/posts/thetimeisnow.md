@@ -3,7 +3,7 @@ draft: false
 date: 2022-05-18
 slug: thetimeisnow
 title: The Time Is Now
-description: Primo video realizzzato con Stable Diffusion e Deforum.
+description: Primo video realizzato con Stable Diffusion e Deforum.
 categories:
   - Immagini
 ---

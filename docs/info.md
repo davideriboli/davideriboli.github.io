@@ -1,3 +1,8 @@
+---
+slug: info
+title: Colophon e licenze
+description: Informazioni di carattere tecnico e legale sul sito e i suoi contenuti.
+---
 
 ### Colophon
 

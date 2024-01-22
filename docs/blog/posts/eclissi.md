@@ -3,7 +3,7 @@ draft: false
 date: 2022-10-25 
 slug: anubis-eclissi
 title: L'eclissi
-description: Opere ispirate al mito di Anubis, create con Stable Diffusion e varie tecniche di pittura digitale, durante l'eclissi solare del 25 ottobre 2022.
+description: Opere ispirate al mito di Anubis e create con Stable Diffusion durante l'eclissi solare del 25 ottobre 2022.
 categories:
   - Immagini
 ---

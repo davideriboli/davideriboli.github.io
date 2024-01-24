@@ -37,7 +37,7 @@ Scrissi anche un breve intervento per il programma di sala che potete [leggere q
 
 - ![Il campanello dello speziale (foto di scena)](campanello/Campanello_04.webp){data-gallery="campanello"}
 
-- ![Il campanello dello speziale (recensione)](campanello/Campanello_05.webp){data-gallery="campanello"}
+- ![Il campanello dello speziale (foto di scena)](campanello/Campanello_05.webp){data-gallery="campanello"}
 
 - ![Il campanello dello speziale (copertina programma di sala)](campanello/Campanello_01.webp){data-gallery="campanello"}
 

@@ -1,9 +1,3 @@
----
-description: Davide Riboli - sito ufficiale.
----
+# Davide Riboli
 
-# 
-
-<figure markdown>
-  <a href="/blog/"><img alt="Davide Riboli - sito ufficiale (immagine di copertina)" src="assets/scratch.webp" width="800"></a>
-</figure>
+<a href="/blog"><img src="/assets/scratch.webp" alt="Davide Riboli" width="1510"></a>

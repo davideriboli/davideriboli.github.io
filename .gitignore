@@ -1,2 +1,4 @@
 .cache
-.obsidian
+VENV
+docs/blog/posts/.obsidian
+docs/models

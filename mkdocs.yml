@@ -1,57 +1,76 @@
-site_name: Davide Riboli
+site_name: 'DR'
 site_url: https://davideriboli.net
+copyright: <a href="/colophon/">&#182; &#169;</a>
 
-markdown_extensions:
-  - attr_list
-  - md_in_html
+markdown_extensions: 
+- md_in_html
+- attr_list  
+- tables
+- meta
+- pymdownx.highlight:
+    use_pygments: true
+    pygments_lang_class: true
+    auto_title: true
+    anchor_linenums: true
+    linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
 
 theme:
+  name: material
   features:
     - navigation.instant
-    - navigation.instant.progress
+    - navigation.instant.prefetch
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.prune
+    - navigation.indexes
+    - navigation.path
     - navigation.top
-  name: material
-  logo: assets/logo.png
-  favicon: assets/favicon.png
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: blue grey
-      accent: light blue
-      toggle:
-        icon: material/brightness-3
-        name: Modalità notte
-     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue grey
-      accent: light blue
-      toggle:
-        icon: material/brightness-7
-        name: Modalità giorno
-  font:
-    text: Domine
-    code: Fira Code
-  
+    - content.code.annotate
+    - content.code.copy
   language: it
+  logo: assets/logo/logo.png
+  favicon: assets/logo/logo.png
+  font:
+    text: Poppins
+    code: Source Code Pro
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Spegni la luce
+      primary: blue grey
+      accent: red
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Accendi la luce
+      primary: blue grey
+      accent: teal
 
 extra:
+  consent:
+    title: Biscottino?
+    description:
+      Il sito non profila in alcun modo e non richiede dati personali. I <i>cookie</i> sono usati solo per il conteggio visite e, se possibile, per il ripristino delle preferenze di lettura.
+    actions:
+     - accept
+     # - reject 
+  generator: false
   analytics:
     provider: google
     property: G-QT9PPLMPTW
-  generator: false
-  consent:
-    title: Cookie consent
-    description: >-
-      Questo sito non esegue alcun tipo di profilazione, né richiede alcun dato personale. I suoi cookie hanno il solo scopo di aggiornare il conteggio visiste e, se possibile, ripristinare le vostre preferenze di lettura.
-    actions:
-      - reject
-      - accept
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/davideriboli
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/DavideRiboli
 
 extra_css:
   - stylesheets/extra.css
@@ -63,6 +82,11 @@ plugins:
   - blog:
       pagination_per_page: 7
       blog_dir: blog
+      post_date_format: full
+      post_url_format: "{date}/{slug}"
+      post_excerpt: required
+      archive_name: Annate
+      categories_name: Scaffali
   - glightbox:
      touchNavigation: true
      loop: false
@@ -82,5 +106,5 @@ plugins:
 nav:
 - Blog:
   - blog/index.md 
-
-copyright: <a href="/info/">Colophon e licenze</a>
+- Info:
+  - info.md

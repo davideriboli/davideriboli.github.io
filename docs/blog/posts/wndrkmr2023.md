@@ -3,12 +3,12 @@ draft: false
 date: 2023-12-31 
 slug: wunderkammer-2023
 title: Wunderkammer 2023
-description: Opere create nel 2023 con Stable Diffusion e varie tecniche di pittura digitale.
+description: Opere singole create nel 2023 con Stable Diffusion e varie tecniche di pittura digitale.
 categories:
   - Immagini
 ---
 
-*Opere create nel 2023 con Stable Diffusion e varie tecniche di pittura digitale.*
+*Opere singole create nel 2023 con Stable Diffusion e varie tecniche di pittura digitale.*
 
 <!-- more -->
 

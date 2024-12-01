@@ -10,8 +10,7 @@ description: Informazioni su Davide Riboli
 
 Ho collaborato per diversi anni con Carmelo Bene, studiato Zen Rinzai col Maestro Engaku Taino e realizzato regie, composizioni multimediali, testi teatrali, traduzioni, saggi e racconti.
 
-È tutto qui dentro.
-
+È tutto qui dentro, insieme a ciò che ho rubato agli autori che mi rischiarano il cammino e a qualche pensiero ozioso che sa di trovar qui un nido bell'e pronto. 
 
 ## Contatti
 

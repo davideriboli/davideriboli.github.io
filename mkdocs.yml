@@ -52,7 +52,7 @@ theme:
         icon: material/weather-sunny
         name: Accendi la luce
       primary: blue grey
-      accent: teal
+      accent: light blue
 
 extra:
   consent:

@@ -14,4 +14,4 @@ Ho collaborato per diversi anni con Carmelo Bene, studiato Zen Rinzai col Maestr
 
 ## Contatti
 
-[GitHub](https://github.com/davideriboli) | [Instagram](https://www.instagram.com/davide.riboli/) | [X](https://twitter.com/DavideRiboli)
+[GitHub](https://github.com/davideriboli) | [Instagram](https://www.instagram.com/davide.riboli/) | [X](https://x.com/DavideRiboli)

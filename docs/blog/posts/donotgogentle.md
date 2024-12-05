@@ -16,10 +16,13 @@ categories:
 
 La lirica è di Dylan Thomas, libera da diritti (almeno spero…). Ho lavorato solo con le prime strofe, utilizzando la forma musicale della [villanella](https://it.wikipedia.org/wiki/Villanella) visto che è l'autore aveva usato quella della [villanelle](https://it.wikipedia.org/wiki/Villanelle) per la sua lirica.
 
-Voce e strumenti sono interamente generati da Intelligenza Artificiale. Mi sembra davvero incredibile che meno d'un anno fa fossimo [qui](darksound.md) e oggi sia possibile questo.
+Voce e strumenti sono interamente generati da Intelligenza Artificiale. Mi sembra davvero incredibile che meno d'un anno fa fossimo [qui](darksound.md) e oggi sia possibile fare questo.
 
-Clic sul link per eseguire il file audio (apre una nuova finestra):
-- [♪ Do Not Go Gentle (03:18 circa)](audio/DoNotGoGentle.mp3)
+<figure class="audio_container" markdown>
+  <audio controls="true">
+    <source src="../../../../audio/DoNotGoGentle.mp3" type="audio/mp3">
+  </audio>
+</figure>
 
 ---
 

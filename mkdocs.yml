@@ -76,9 +76,9 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
-  - social:
-      cards_layout_options:
-        background_color: #4c566a
+  # - social:
+  #     cards_layout_options:
+  #       background_color: #4c566a
   - blog:
       pagination_per_page: 7
       blog_dir: blog

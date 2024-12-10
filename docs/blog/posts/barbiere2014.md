@@ -2,7 +2,7 @@
 draft: false
 date: 2014-08-11 
 slug: barbiere-siviglia-ROF-2014
-title: Barbiere di Siviglia [Rossini Opera Festival 2014]
+title: Barbiere di Siviglia - ROF 2014
 description: Archivio dello spettacolo «Il Barbiere di Siviglia» realizzato per il Rossini Opera Festival (Pesaro, 2014).
 categories:
   - Teatro

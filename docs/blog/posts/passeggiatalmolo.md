@@ -3,7 +3,7 @@ draft: false
 date: 2024-04-21
 slug: passeggiata-al-molo
 title: La Passeggiata Al Molo
-description: Video realizzato con [Deforum](https://deforum.github.io/).
+description: Video realizzato con Deforum.
 categories:
   - Immagini
 ---

@@ -2,7 +2,7 @@
 draft: false
 date: 2023-08-19 
 slug: un-arte
-title: Catalogo delle cose perdute [Un'arte]
+title: Catalogo delle cose perdute
 description: Una poesia di Elizabeth Bishop che il mio Maestro Engaku Taino amava molto.
 categories:
   - Poesia

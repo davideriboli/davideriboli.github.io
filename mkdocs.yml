@@ -1,4 +1,4 @@
-site_name: 'DR'
+site_name: 'Davide Riboli'
 site_url: https://davideriboli.net
 copyright: <a href="/colophon/">&#182; &#169;</a>
 
@@ -67,8 +67,12 @@ extra:
     provider: google
     property: G-QT9PPLMPTW
   social:
+    - icon: fontawesome/brands/facebook 
+      link: https://www.facebook.com/davideriboli.fb
     - icon: fontawesome/brands/github 
       link: https://github.com/davideriboli
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/davide.riboli/
     - icon: fontawesome/brands/twitter 
       link: https://x.com/DavideRiboli
 

@@ -3,7 +3,7 @@ draft: false
 date: 2024-12-15 
 slug: a-volte-li-comprano
 title: A volte li comprano
-description: In questo mondo curioso, può succedere persino che qualcuno compri un mio quadro (anzi, mio e di Luciana Livi).
+description: In questo mondo curioso può succedere persino che qualcuno compri un mio quadro (mio e di Luciana Livi).
 categories:
   - Immagini
 ---
